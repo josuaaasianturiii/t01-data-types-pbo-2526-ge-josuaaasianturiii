@@ -21,21 +21,21 @@ public class Main {
             }
         }
 
-        else if (soal.equals("Soal2")) {
-            // Soal 2 — Float vs Double Precision Trap
-            double x = input.nextDouble();
-            double y = input.nextDouble();
+     else if (soal.equals("Soal2")) {
+    float xFloat = input.nextFloat();
+    float yFloat = input.nextFloat();
 
-            float fx = (float) x;
-            float fy = (float) y;
+    double xDouble = (double) xFloat;
+    double yDouble = (double) yFloat;
 
-            float sumFloat = fx + fy;
-            double sumDouble = x + y;
+    float sumFloat = xFloat + yFloat;
+    double sumDouble = xDouble + yDouble;
 
-            double diff = Math.abs(sumDouble - sumFloat);
+    double diff = Math.abs(sumDouble - sumFloat);
 
-            System.out.printf("%.6f\n", diff);
-        }
+    System.out.printf("%.6f\n", diff);
+}
+
 
         else if (soal.equals("Soal3")) {
             // Soal 3 — Primitive vs Wrapper Comparison
